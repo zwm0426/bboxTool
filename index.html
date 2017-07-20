@@ -342,14 +342,17 @@ Microsoft Visual Studio 2010 (or later version)</code></pre></div>
 
 <p>Then, you need to setup the RP method in MATLAB by using commands below:</p>
 
-<div><pre><code class="language-none">mex aaa.aaa
-(code here)</code></pre></div>
+<div><pre><code class="language-none">**In MATLAB **
+&gt;&gt;&gt; addpath(&#39;compile&#39;)
+&gt;&gt;&gt; addpath(&#39;cmex&#39;)
+&gt;&gt;&gt; gbvs_install
+&gt;&gt;&gt; gbvs_compile</code></pre></div>
 
 <p>Next, you need to compile the file of MBS(?) saliency map by: </p>
 
 <div><pre><code class="language-none">**In MATLAB **
-
-run setup(?)</code></pre></div>
+&gt;&gt;&gt; addpath(&#39;mex&#39;)
+&gt;&gt;&gt; compile_win</code></pre></div>
 
 <h3 id="toc_2">While Using</h3>
 
